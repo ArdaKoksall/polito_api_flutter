@@ -1,0 +1,1 @@
+const String baseUrl = "https://app.didattica.polito.it/api";
