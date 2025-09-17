@@ -33,6 +33,7 @@ class LoginScreenState extends State<LoginScreen> {
   bool _isLoading = false;
   String _statusMessage = 'Ready to login';
   bool _isLoggedIn = false;
+  final api = PolitoApi();
 
   Future<void> _performLogin() async {
     setState(() {
@@ -47,10 +48,11 @@ class LoginScreenState extends State<LoginScreen> {
       final username = env['USERNAME'] ?? 'YOUR_USERNAME';
       final password = env['PASSWORD'] ?? 'YOUR_PASSWORD';
 
-      final api = PolitoApi();
       final loginRequest = LoginRequest(username: username, password: password);
 
-      await api.basicLogin(loginRequest);
+      final String token = (await api.basicLogin(loginRequest))!;
+      print('Received token: $token');
+      await api.me(token);
 
       setState(() {
         _isLoggedIn = true;
