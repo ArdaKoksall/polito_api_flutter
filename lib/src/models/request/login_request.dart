@@ -14,17 +14,19 @@ class LoginRequest {
   });
 
   Future<Map<String, dynamic>> toJson() async {
+    Map<String, dynamic> deviceInfo = {};
+
+    if (includeDeviceInfo) {
+      deviceInfo = await DeviceInfoHelper.getDeviceData();
+    }
+
     final Map<String, dynamic> data = {
       'loginType': "basic",
       'username': username,
       'password': password,
       'preferences': {'language': useItalian ? 'it' : 'en'},
+      'device': deviceInfo,
     };
-
-    if (includeDeviceInfo) {
-      final deviceInfo = await DeviceInfoHelper.getDeviceData();
-      data.addAll(deviceInfo);
-    }
 
     return data;
   }
