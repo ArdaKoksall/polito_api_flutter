@@ -1,1 +1,21 @@
-TODO: Add your license here.
+European Union Public License (EUPL) v. 1.2
+
+------------------------------------------------------------
+This project is based on the official Politecnico di Torino
+Student API specification (OpenAPI/YAML), which is © Politecnico di Torino.
+
+This wrapper is an independent, open-source project.
+
+You are allowed to:
+- Use, modify, and redistribute this project under the terms of the EUPL v1.2.
+- Combine it with other works under compatible licenses (see EUPL v1.2 appendix).
+
+Obligations:
+- Keep this license notice and any attribution notices intact.
+- Clearly indicate if you have modified the code, with dates.
+- Provide source code when distributing compiled versions.
+- You may not impose additional restrictions on the license of this work.
+- Do not use Politecnico di Torino’s name or logos to imply official endorsement.
+
+Full text of the EUPL v1.2 can be found here:
+https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12

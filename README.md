@@ -29,4 +29,33 @@ import 'package:polito_api_flutter/polito_api_flutter.dart';
 
 ## Example
 
-For usage examples, check out the `example/` folder in this repository.
+## Example
+
+For a working usage example, see [`example/lib/main.dart`](example/lib/main.dart) in this repository.
+
+## Installation
+
+Add this to your package's `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  polito_api_flutter: ^0.0.1
+```
+
+## License
+
+This project is licensed under the **European Union Public License (EUPL) v1.2**.
+
+- The original API specification is © Politecnico di Torino.
+- This wrapper is an independent open-source project.
+- You may use, modify, and redistribute this project under the terms of the EUPL v1.2.
+- You must keep this license notice and any attribution intact.
+- Clearly indicate if you have modified the code, with dates.
+- Provide source code when distributing compiled versions.
+- Do not use Politecnico di Torino’s name or logos to imply official endorsement.
+
+For the full license text, see the [LICENSE](./LICENSE) file.
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the [GitHub repository](https://github.com/your-username/polito_api_flutter).
