@@ -1,7 +1,9 @@
 name: polito_api_flutter
-description: "A new Flutter project."
+description: "A Flutter/Dart client library for the Politecnico di Torino Student API."
 version: 0.0.1
-homepage:
+homepage: https://github.com/ArdaKoksall/polito_api_flutter
+repository: https://github.com/ArdaKoksall/polito_api_flutter
+
 
 environment:
   sdk: ^3.8.1
